@@ -1,0 +1,190 @@
+//Landing Section
+.landing {
+  min-height: 78vh; 
+  background: linear-gradient(rgba(0, 0, 0, 0.6)), url('/media/frenchie.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  color: white;
+  display: grid;
+  place-items: center;
+}
+
+.landing__div {
+  text-align: center;
+  
+  
+  h1 {
+    font-size: $header1;
+  }
+
+  p {
+    font-size: $text;
+  }
+}
+
+//Information Cards Section
+.info-cards-section {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 15vh;
+}
+
+.card {
+  flex: 1 1 10rem;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  i {
+    font-size: 2.5rem;
+    color: rgb(37, 108, 179);
+    padding: 1rem;  
+  }
+
+  h3 {
+    font-size: $header3;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 1rem 0rem;
+  }
+}
+
+//Gallery Section
+.gallery_container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  img {
+    padding: 0.5rem;
+  }
+}
+
+//Newsletter Section
+.newsletter {
+  background: rgb(37, 108, 179);
+  width: 100%;
+  min-height: 13vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+
+  .newsletter__header{
+    color: white;
+    font-size: $header2;
+    padding: 1rem;
+  }
+}
+
+.newsletter__form {
+  display: flex;
+  div {
+    padding: 2rem;
+    align-items: center;
+
+    i {
+      color: white;
+      font-size: $text;
+    }
+    input {
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 0.1rem;
+    }
+  }
+  button {
+    font-size: 1.1rem;
+    background: none;
+    border: none;
+    border-radius: 12rem;
+    outline: 1px solid white;
+    color: white;
+    padding: 0.2rem 0.5rem;
+
+  }
+}
+
+footer {
+  display: grid;
+  place-items: center;
+  padding: 0.5rem 0rem;
+
+  h3{
+    font-size: 1rem;
+  }
+}
+
+//Mobile Section 
+@media (max-width: 1060px) {
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+
+  }
+}
+
+@media (max-width: 880px) {
+  .newsletter {
+    .newsletter__form {
+      padding-bottom: 1rem;
+    } 
+    div {
+      padding: 0.5rem;
+      
+      i {
+        padding: 0rem 1rem;
+      }
+      button {
+        width: 100%;
+      }
+    }
+    .newsletter__form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .info-cards-section {
+    padding: 1rem;
+  }
+  .card {
+    padding: 0rem 7rem;
+  }
+
+  .gallery_container {
+    .hide {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery_container {
+    ._hide {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .info-cards-section {
+    padding: 1rem;
+  }
+  .card {
+    padding: 0rem 4rem;
+  }
+}

@@ -1,0 +1,43 @@
+.collar {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  padding-top: 0.5rem;
+
+  .collar__img {
+    min-height: 50vh;
+    min-width: 80vh;
+    background-image: url('/media/collar.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+} 
+
+.collar__content {
+  width: 85%;
+  margin: auto;
+  h2 {
+    padding-top: 1rem;
+    font-size: $header2;
+  }
+  p, dd {
+    font-size: $text;
+    padding: 0rem 0rem 0.5rem 0rem;
+  }
+  dt {
+    font-size: $header3;
+    font-weight: 500;
+    display: list-item;
+    color: rgb(37, 108, 179);
+  }
+
+  dd {
+    padding-top: 0.5rem;
+  }
+}
